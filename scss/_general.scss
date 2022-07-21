@@ -2,10 +2,28 @@
     box-sizing: border-box;
 }
 body{
-    font-size: 19px;
+    font-size: 16px;
     padding: 0;
+    font-family: "Karla", sans-serif;
+
 }
 
+
 .container{
-    // 
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 165px;
+}
+
+
+@media screen and (max-width: 1090px) {
+    .container{
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .container{
+        padding: 15px;
+    }
 }

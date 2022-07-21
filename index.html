@@ -10,7 +10,60 @@
 </head>
 
 <body>
-    Scss template
+    <!-- <button class="btn-basic">Button Basic</button>
+    <button class="btn-danger">Button Basic</button>
+    <button class="btn-success">Button Basic</button>
+    <button class="btn-primary">Button Basic</button> -->
+
+    <!-- <div class="element">Element</div> -->
+
+    <header class="header container">
+        <a class="header__logo" href="#">
+            <img class="header__logo__img" src="./img/logo.png" alt="Logo image">
+        </a>
+
+        <ul class="header__navbar nav">
+            <li class="nav__item">
+                <a href="#" class="nav__link">HOW WE WORK</a>
+            </li>
+
+            <li class="nav__item">
+                <a href="#" class="nav__link">BLOG</a>
+            </li>
+
+            <li class="nav__item">
+                <a href="#" class="nav__link">ACCOUNT</a>
+            </li>
+        </ul>
+
+        <a href="#" class="header__view">VIEW PLANS</a>
+        <div class="header__toggle">
+            <span></span>
+        </div>
+    </header>
+    <div class="mobile">
+        <ul class="mobile__navbar nav">
+            <li class="nav__item">
+                <a href="#" class="nav__link">HOW WE WORK</a>
+            </li>
+
+            <li class="nav__item">
+                <a href="#" class="nav__link">BLOG</a>
+            </li>
+
+            <li class="nav__item">
+                <a href="#" class="nav__link">ACCOUNT</a>
+            </li>
+        </ul>
+        <a href="#" class="mobile__view">VIEW PLANS</a>
+    </div>
 </body>
+<script>
+    var toggle = document.querySelector(".header__toggle")
+    toggle.addEventListener('click', () => {
+        toggle.classList.toggle('header__toggle--active')
+        document.querySelector(".mobile").classList.toggle("mobile--open")
+    })
+</script>
 
 </html>
